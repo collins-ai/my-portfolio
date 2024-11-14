@@ -3,10 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS file links -->
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- JavaScript file link-->
+    <script defer src="script.js"></script>
+    <!-- Title -->
     <title>Document</title>
 </head>
 <body>
-    <header style="background-color: gold; color: white; padding: 10px; font-size: 28px; text-align: center;">THIS IS MY PORTFOLIO</header>
+    <header>
+        <nav>
+            <img src="assets/icons/more.png" alt="" class="more" id="menu">
+            <ul id="change">
+                <img src="assets/icons/close.png" alt="" class="close" id="exit">
+                <li class="show"><a href="#skills">Skills</a></li>
+                <li class="show"><a href="#projects">Projects</a></li>
+                <li class="show"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about" class="section1">
+            <picture>
+                <img src="assets/images/collins.jpg" alt="The portfolio website owner, with his white t-shirt" class="owner">
+            </picture>
+            <h1>Hi, I'm Sunday Collins</h1>
+            <p class="h2">I build responsive websites</p>
+            <p>I'm a freelance frontend developer, working globally from Nigeria. I offer reliable services such as converting your figma designs into reponsive websites accross mobile, tablet and desktop devices. I also cover web hosting services for interested clients.</p>
+            <p>Email address <img src="assets/icons/gmail.png" alt="" class="email"> collinsosas@gmail.com</p>
+            <p>Mobile number <img src="assets/icons/viber.png" alt="" class="mobile"> +234 8155108126</p>
+            <a href="#contact">Contact links</a>
+        </section>
+        <section id="skills" class="section2">
+            <h1 style="grid-area: head;">A few skills I've Acquired</h1>
+            <div style="grid-area: html;">
+                <div class="skill">
+                    <img src="assets/icons/html-5.png" alt="">
+                    <span>HTML</span>
+                </div>
+                <p>Using HTML, I can convert your design into a well structured and organised web page.</p>
+            </div>
+            <div style="grid-area: css;">
+                <div class="skill">
+                    <img src="assets/icons/css-3.png" alt="">
+                    <span>CSS</span>
+                </div>
+                <p>This is where the magic happens. Colors, fonts, allignment and more are applied here.</p>
+            </div>
+            <div style="grid-area: bootstrap;">
+                <div class="skill">
+                    <img src="assets/icons/bootstrap.png" alt="">
+                    <span>Bootstrap</span>
+                </div>
+                <p>If you're looking for a responsive wedsite, Bootstrap will do the job.</p>
+            </div>
+            <div style="grid-area: javascript;">
+                <div class="skill">
+                    <img src="assets/icons/js.png" alt="">
+                    <span>JavaScript</span>
+                </div>
+                <p>All the major web page interactions is handled by JavaScript.</p>
+            </div>
+            <div style="grid-area: git;">
+                <div class="skill">
+                    <img src="assets/icons/github.png" alt="">
+                    <span>Git(GitHub)</span>
+                </div>
+                <p>This is the version control system.</p>
+            </div>
+        </section>
+        <article id="projects">
+            <h1 style="grid-area: title;">A few projects</h1>
+            <section class="project1">
+                <a href="https://collins-ai.github.io/article-preview">
+                    <h1>Article preview project</h1>
+                    <p>An article design which displays a list of share options when the share icon is clicked.</p>
+                    <img src="assets/images/article-preview.jpg" alt="An article containing an image, some text and a share button.">
+                </a>
+            </section>
+            <section class="project2">
+                <a href="https://collins-ai.github.io/newsletter-form">
+                    <h1>Newsletter form project</h1>
+                    <p>With JavaScript form validation, this newsletter displays a success message or an error message to its users.</p>
+                    <img src="assets/images/newsletter-form.jpg" alt="A newsletter form, with an email input field and a monthly subscription button.">
+                </a>
+            </section>
+            <section class="project3">
+                <a href="https://collins-ai.github.io/time-tracker">
+                    <h1>Time tracker project</h1>
+                    <p>This tracker fetches its data from a JSON file, and displays on various parts of the design.</p>
+                    <img src="assets/images/time-tracker.jpg" alt="A time tracker, containing the daily, weekly and monthly usage of time.">
+                </a>
+            </section>
+            <section class="project4">
+                <a href="https://collins-ai.github.io/tip-calculator">
+                    <h1>Tip calculator project</h1>
+                    <p>A tip calculator which correctly calculate the tip and total cost of bill per person.</p>
+                    <img src="assets/images/tip-calculator.jpg" alt="A white and green tip calculator with a reset button.">
+                </a>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <div class="end">
+            <p class="end1">My contact info.</p>
+            <p class="end2">I'm not here only to work, learning is a contineous process and I'm enthusiastic about learning, growing and collaboration. If interested in my services or have any opporunity that can help improve my skill, contact me using the details below.</p>
+        </div>
+        <ul id="contact" class="link">
+            <li>
+                <a href="https://www.linkedin.com/in/collins-sunday-612572317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                    <img src="assets/icons/linkedin.png" alt="">
+                    <span>Linkedin</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com/sundaycoll11517">
+                    <img src="assets/icons/twitter.png" alt="">
+                    <span>Twitter</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/collinssunday83?igsh=aWFrYzEyczZ4c3ow">
+                    <img src="assets/icons/instagram.png" alt="">
+                    <span>Instagram</span>
+                </a>
+            </li>
+        </ul>
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>

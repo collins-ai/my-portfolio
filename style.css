@@ -1,0 +1,270 @@
+:root {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body {
+    font-size: 1.6rem;
+    font-family: "rubik";
+    color: rgb(255, 255, 255);
+    background: linear-gradient(rgb(0, 0, 255) 20%, rgb(7, 0, 43));
+}
+h1 {
+    font-family: "langar";
+}
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+header a {
+    @media screen and (max-width: 768px) {
+        color: rgb(0, 0, 255);
+    }
+}
+header li {
+    list-style: none;
+    display: inline;
+    padding: 2rem;
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
+}
+header ul {
+    text-align: end;
+    padding-right: 2rem;
+    @media screen and (max-width: 768px) {
+        background-color: rgb(255, 255, 255);
+        text-align: start;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        display: none;
+    }
+}
+.more {
+    position: absolute;
+    left: 90%;
+    top: 2rem;
+}
+.close {
+    position: absolute;
+    left: 90%;
+}
+nav a:hover {
+    padding: .5rem;
+    border-radius: 5px;
+    background-color: rgb(255, 0, 0);
+    @media screen and (max-width: 768px) {
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 255);
+    }
+}
+nav img {
+    width: 3rem;
+    display: none;
+    padding: .5rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: .5rem;
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
+}
+nav img:hover {
+    background-color: rgb(255, 0, 0);
+}
+@keyframes appear1 {
+    from {
+        opacity: 0;
+        transform: translateX(-100rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes appear2 {
+    from {
+        opacity: 0;
+        scale: 0;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+.section1 {
+    max-width: 60rem;
+    margin: 10rem 10%;
+    animation: appear1 1.5s linear;
+}
+.owner {
+    width: 15rem;
+    border-radius: 50%;
+    border: 4px solid rgb(255, 0, 0);
+}
+.email, .mobile {
+    display: inline-block;
+    width: 1.5rem;
+    padding: .1rem;
+    border-radius: 2px;
+    background: rgb(255, 255, 255);
+}
+.section1 .h2 {
+    font-size: 2.5rem;
+}
+.section1 p {
+    margin-top: 1rem;
+}
+.section1 a {
+    padding: .5rem;
+    margin-top: 2rem;
+    display: inline-block;
+    border-radius: 5px;
+    color: rgb(0, 0, 255);
+    background-color: rgb(255, 255, 255);
+}
+.section1 a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+}
+.section2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .1fr 1fr 1fr;
+    grid-template-areas:
+    "head head head" 
+    "html css bootstrap"
+    "javascript git git";
+    gap: 3rem;
+    margin: auto;
+    padding: 2rem;
+    max-width: 140rem;
+    animation: appear2 linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: .1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "head" 
+        "html"
+        "css"
+        "bootstrap"
+        "javascript"
+        "git";
+        gap: 2rem;
+        margin: 0;
+        max-width: 40rem;
+    }
+}
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.section2 img {
+    width: 3rem;
+    padding: .3rem;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+}
+.section2 span {
+    font-weight: bold;
+}
+.section2 p {
+    padding-left: 4rem;
+}
+article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .1fr 1fr 1fr;
+    grid-template-areas:
+    "title title" 
+    "project1 project2"
+    "project3 project4";
+    grid-row-gap: 1rem;
+    grid-column-gap: 2rem;
+    max-width: 60rem;
+    padding: 2rem;
+    margin: 10rem auto;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    animation: appear2 linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: .1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "title" 
+        "project1"
+        "project2"
+        "project3"
+        "project4";
+        max-width: 30rem;
+    }
+}
+article h1 {
+    color: rgb(0, 0, 0);
+}
+article p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.project1, .project2, .project3, .project4 {
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px solid rgb(7, 0, 43);
+    animation: appear2 linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+.project1 img, .project2 img, .project3 img, .project4 img {
+    width: 15rem;
+    margin: auto;
+}
+.project1 {
+    background: linear-gradient(rgb(219, 3, 122) 20%, rgb(41, 1, 24));
+    grid-area: project1;
+}
+.project2 {
+    background: linear-gradient(rgb(2, 214, 66) 20%, rgb(0, 36, 11));
+    grid-area: project2;
+}
+.project3 {
+    background: linear-gradient(rgb(3, 218, 218) 20%, rgb(1, 34, 34));
+    grid-area: project3;
+}
+.project4 {
+    background: linear-gradient(rgb(226, 92, 3) 20%, rgb(39, 16, 1));
+    grid-area: project4;
+}
+footer {
+    border-top: 3px solid rgb(255, 255, 255);
+}
+footer ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+footer li {
+    display: inline-block;
+    padding: 1rem;
+}
+footer img {
+    width: 3.5rem;
+    padding: .4rem;
+    margin: auto;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+}
+.end {
+    max-width: 60rem;
+    margin: 1rem 1rem;
+}
+.end1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.end2 {
+    color: rgb(201, 192, 192);  
+}
