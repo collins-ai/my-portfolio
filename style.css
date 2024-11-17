@@ -40,15 +40,6 @@ header ul {
         display: none;
     }
 }
-.more {
-    position: absolute;
-    left: 90%;
-    top: 2rem;
-}
-.close {
-    position: absolute;
-    left: 90%;
-}
 nav a:hover {
     padding: .5rem;
     border-radius: 5px;
@@ -64,6 +55,9 @@ nav img {
     padding: .5rem;
     background-color: rgb(255, 255, 255);
     border-radius: .5rem;
+    position: absolute;
+    left: 85%;
+    top: 1rem;
     @media screen and (max-width: 768px) {
         display: block;
     }
@@ -135,7 +129,7 @@ nav img:hover {
     "head head head" 
     "html css bootstrap"
     "javascript git git";
-    gap: 3rem;
+    gap: 1rem;
     margin: auto;
     padding: 2rem;
     max-width: 140rem;
@@ -182,8 +176,7 @@ article {
     "title title" 
     "project1 project2"
     "project3 project4";
-    grid-row-gap: 1rem;
-    grid-column-gap: 2rem;
+    gap: 2rem;
     max-width: 60rem;
     padding: 2rem;
     margin: 10rem auto;
@@ -206,6 +199,7 @@ article {
 }
 article h1 {
     color: rgb(0, 0, 0);
+    margin-bottom: 1rem;
 }
 article p {
     font-size: 1.2rem;
@@ -224,19 +218,19 @@ article p {
     margin: auto;
 }
 .project1 {
-    background: linear-gradient(rgb(231, 0, 127) 20%, rgb(73, 1, 42));
+    background: linear-gradient(rgb(233, 94, 2) 20%, rgb(63, 26, 1));
     grid-area: project1;
 }
 .project2 {
-    background: linear-gradient(rgb(2, 230, 70) 20%, rgb(1, 70, 22));
+    background: linear-gradient(rgb(3, 233, 233) 20%, rgb(1, 58, 58));
     grid-area: project2;
 }
 .project3 {
-    background: linear-gradient(rgb(1, 231, 231) 20%, rgb(1, 68, 68));
+    background: linear-gradient(rgb(233, 2, 2) 20%, rgb(54, 1, 1));
     grid-area: project3;
 }
 .project4 {
-    background: linear-gradient(rgb(231, 93, 1) 20%, rgb(78, 32, 1));
+    background: linear-gradient(rgb(1, 231, 70)  20%, rgb(1, 63, 20));
     grid-area: project4;
 }
 footer {
@@ -246,6 +240,9 @@ footer ul {
     text-align: center;
     margin: 0;
     padding: 0;
+    @media screen and (max-width: 768px) {
+        font-size: 1.4rem;
+    }
 }
 footer li {
     display: inline-block;
@@ -265,7 +262,13 @@ footer img {
 .end1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    @media screen and (max-width: 768px) {
+        font-size: 2.2rem;
+    }
 }
 .end2 {
-    color: rgb(201, 192, 192);  
+    color: rgb(201, 192, 192);
+    @media screen and (max-width: 768px) {
+        font-size: 1.4rem;
+    }
 }
